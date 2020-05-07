@@ -24,8 +24,8 @@ fields:
   default: now
   hidden: true
 - type: tag_list
-  name: categories
-  label: Categories
+  name: tags
+  label: Etiquetas
 - type: color
   name: project_bg_color
   config:
