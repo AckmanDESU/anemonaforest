@@ -10,7 +10,7 @@ sections:
   create: documents
   match: content/posts/**/*.md
   templates:
-  - project
+  - post
 - type: directory
   path: data
   label: Fotos
@@ -18,6 +18,10 @@ sections:
   match: content/photos/**/*.md
   templates:
   - project
+- type: document
+  path: data/content/author.json
+  label: Autor
+  match: "**/*"
 - type: document
   path: data/config.json
   label: Configuración
