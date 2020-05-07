@@ -25,9 +25,9 @@ sections:
   path: data/config.json
   label: Configuración
 upload_dir: ''
-public_path: ''
+public_path: https://res.cloudinary.com/ackmandesu/image/upload
 front_matter_path: ''
-use_front_matter_path: 
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: dist
