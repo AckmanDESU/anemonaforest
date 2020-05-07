@@ -12,16 +12,15 @@ sections:
   templates:
   - post
 - type: directory
-  path: data
+  path: data/content/photos
   label: Fotos
   create: documents
-  match: content/photos/**/*.md
+  match: "**/*.md"
   templates:
   - project
 - type: document
   path: data/content/author.json
   label: Autor
-  match: "**/*"
 - type: document
   path: data/config.json
   label: Configuración

@@ -36,5 +36,3 @@ fields:
   config:
     color_format: Hex
   label: Foreground color
-pages:
-- data/my-picture.md
