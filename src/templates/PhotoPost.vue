@@ -11,17 +11,17 @@
           />
           <div class="photo-info">
 
-            <div class="categories-container">
-              <div class="categories">
-                <span class="label">Categories</span>
+            <!-- <div class="tags-container">
+              <div class="tags">
+                <span class="label">Etiquetas</span>
                 <span
-                  class="category"
-                  v-for="(category, index) in $page.post.categories"
+                  class="tag"
+                  v-for="(tag, index) in $page.post.tags"
                   :key="index"
-                  v-text="category"
+                  v-text="tag"
                 />
               </div>
-            </div>
+            </div> -->
 
             <div class="year-container">
               <span class="label">Year</span>
@@ -47,7 +47,6 @@ query PhotoPost ($path: String!) {
     title
     date (format: "YYYY")
     content
-    categories
     project_bg_color
     project_fg_color
   }
@@ -87,10 +86,10 @@ export default {
 .photo-info > div:last-of-type {
   margin: 0;
 }
-.category:after {
+.tag:after {
   content: ", ";
 }
-.category:last-of-type:after {
+.tag:last-of-type:after {
   content: "";
 }
 </style>

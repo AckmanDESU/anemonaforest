@@ -15,10 +15,10 @@
           class="thumbnail"
         />
         <h3 class="photo-title">{{ item.node.title }}</h3>
-        <div class="categories">
+        <div class="tags">
           <span
-            class="category"
-            v-for="(item, index) in item.node.categories"
+            class="tag"
+            v-for="(item, index) in item.node.tags"
             :key="index"
           >{{ item }}</span>
         </div>
@@ -62,14 +62,14 @@ export default {
   color: var(--color-contrast);
   margin: 2rem 0 1rem 0;
 }
-.categories {
+.tags {
   font-size: 0.8rem;
   color: var(--color-contrast-1);
 }
-.category {
+.tag {
   margin-right: 0.8rem;
 }
-.category:last-of-type {
+.tag:last-of-type {
   margin: 0;
 }
 .photo:hover .thumbnail {
