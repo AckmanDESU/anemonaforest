@@ -2,17 +2,17 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Portfolio",
-  siteUrl: `https://www.itsnwa.com`,
+  siteName: "Blog Personal",
+  siteUrl: `https://anemona.netlify.app`,
   host: "0.0.0.0",
   titleTemplate: "%s - NWA",
-  siteDescription: "Creative technologist",
+  siteDescription: "Vamos a morir todos",
   plugins: [
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "projects/**/*.md",
-        typeName: "ProjectPost",
+        path: "data/content/posts/**/*.md",
+        typeName: "BlogPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
@@ -23,8 +23,8 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "journal/**/*.md",
-        typeName: "JournalPost",
+        path: "data/content/photos/**/*.md",
+        typeName: "PhotoPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",

@@ -23,7 +23,7 @@ export default {
   data() {
     return {
         logo: require("../../static/logo.svg"),
-        settings: require("../../data/theme.json")
+        settings: require("../../data/config.json")
     }
   }
 }

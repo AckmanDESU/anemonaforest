@@ -29,8 +29,8 @@
 </template>
 
 <page-query>
-query JournalPost ($path: String!) {
-  post: journalPost (path: $path) {
+query PhotoPost ($path: String!) {
+  post: photoPost (path: $path) {
     title
     author
     date (format: "D. MMMM YYYY")

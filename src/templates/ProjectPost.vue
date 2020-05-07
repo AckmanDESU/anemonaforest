@@ -36,8 +36,8 @@
 </template>
 
 <page-query>
-query ProjectPost ($path: String!) {
-  post: projectPost (path: $path) {
+query BlogPost ($path: String!) {
+  post: blogPost (path: $path) {
     title
     date (format: "YYYY")
     content

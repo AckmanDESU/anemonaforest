@@ -26,13 +26,12 @@
 
 <page-query>
 query Journal {
-	posts: allJournalPost {
+	posts: allPhotoPost {
     edges {
       node {
         id
         path
         title
-        summary
       }
     }
   }
