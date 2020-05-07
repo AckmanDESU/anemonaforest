@@ -1,6 +1,6 @@
 ---
 date: 2020-05-07
-thumbnail: "/v1486246972/Portfolio%20Project/by_burned_2560_1.jpg"
+thumbnail: ''
 title: Garage
 tags:
 - a
@@ -8,6 +8,6 @@ tags:
 - c
 project_bg_color: ''
 project_fg_color: ''
-image: "/v1588533697/uploads/wallhaven-6k3oox_yqgilf.jpg"
+image: https://s3.eu-west-3.amazonaws.com/soph-media/wallhaven-6k3oox.jpg
 
 ---
