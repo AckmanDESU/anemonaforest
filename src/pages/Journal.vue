@@ -26,12 +26,13 @@
 
 <page-query>
 query Journal {
-	posts: allPhotoPost {
+	posts: allBlogPost {
     edges {
       node {
         id
         path
         title
+        summary
       }
     }
   }
@@ -82,7 +83,7 @@ export default {
   font-size: 2rem;
   color: var(--color-contrast);
 }
-.journal-summary {
+.journal-excerpt {
   color: var(--color-contrast-1);
 }
 

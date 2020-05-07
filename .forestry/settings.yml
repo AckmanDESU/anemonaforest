@@ -17,7 +17,7 @@ sections:
   create: documents
   match: "**/*.md"
   templates:
-  - project
+  - photo
 - type: document
   path: data/content/author.json
   label: Autor
