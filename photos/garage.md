@@ -8,6 +8,6 @@ tags:
 - c
 project_bg_color: ''
 project_fg_color: ''
-image: https://s3.eu-west-3.amazonaws.com/soph-media/wallhaven-6k3oox.jpg
+image: https://s3.eu-west-3.amazonaws.com/soph-media/h7ehtijme9t41.jpg
 
 ---
