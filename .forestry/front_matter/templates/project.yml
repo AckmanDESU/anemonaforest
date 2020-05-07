@@ -1,6 +1,7 @@
 ---
-label: Project
+label: Foto
 hide_body: false
+display_field: title
 fields:
 - type: file
   name: thumbnail
