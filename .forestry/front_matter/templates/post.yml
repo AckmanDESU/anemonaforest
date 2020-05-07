@@ -28,5 +28,3 @@ fields:
   name: headerImage
   label: Cabecera
   description: "(Opcional) La foto principal del post"
-pages:
-- journal/macos-development-environment.md

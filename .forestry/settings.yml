@@ -5,17 +5,17 @@ admin_path: "/static/admin"
 webhook_url: 
 sections:
 - type: directory
-  path: content
+  path: data
   label: Blog
   create: documents
-  match: data/posts/**/*.md
+  match: content/posts/**/*.md
   templates:
   - project
 - type: directory
-  path: photos
+  path: data
   label: Fotos
   create: documents
-  match: data/photos/**/*.md
+  match: content/photos/**/*.md
   templates:
   - project
 - type: document

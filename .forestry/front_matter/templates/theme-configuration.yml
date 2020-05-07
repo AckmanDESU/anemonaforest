@@ -30,5 +30,3 @@ fields:
 - type: boolean
   name: dark_mode
   label: Modo Oscuro
-pages:
-- data/theme.json
