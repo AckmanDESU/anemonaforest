@@ -32,25 +32,6 @@ module.exports = {
         },
       },
     },
-    {
-      use: "gridsome-plugin-image-cdn",
-      options: {
-        site: {
-          baseUrl: "https://nemona.netlify.app",
-        },
-        cdn: {
-          baseUrl: "https://res.cloudinary.com/ackmandesu",
-          preset: "cloudinary",
-          imagePrefix: "/",
-        },
-        types: [
-          {
-            typeName: "wordPress_MediaItem",
-            sourceField: "sourceUrl",
-          },
-        ],
-      },
-    },
   ],
   transformers: {
     remark: {
