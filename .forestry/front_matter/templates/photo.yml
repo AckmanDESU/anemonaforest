@@ -36,5 +36,10 @@ fields:
   config:
     color_format: Hex
   label: Foreground color
+- name: image
+  type: file
+  config:
+    maxSize: 10
+  label: Image
 pages:
 - photos/garage.md
