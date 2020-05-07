@@ -28,3 +28,5 @@ fields:
   name: headerImage
   label: Cabecera
   description: "(Opcional) La foto principal del post"
+pages:
+- posts/lorem-ipsum-dolor-sit-amet.md
