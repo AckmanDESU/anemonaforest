@@ -1,34 +1,34 @@
 ---
-label: Theme configuration
+label: Configuración
 hide_body: true
 fields:
 - type: text
   name: site_name
-  label: Site name
+  label: Nombre del Sitio
 - type: textarea
   name: site_description
-  label: Site description
+  label: Descripción del Sitio
 - type: textarea
   name: hero_title
-  label: Hero title
+  label: Título Principal
   config:
     wysiwyg: true
     schema:
       format: html
 - type: textarea
   name: hero_subtitle
-  label: Hero subtitle
+  label: Subtítulo
   config:
     wysiwyg: true
     schema:
       format: html
 - name: footer
-  label: Footer text
+  label: Pie de Página
   type: text
   hidden: false
   default: ''
 - type: boolean
   name: dark_mode
-  label: Dark mode
+  label: Modo Oscuro
 pages:
 - data/theme.json

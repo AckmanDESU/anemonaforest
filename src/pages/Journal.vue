@@ -17,7 +17,7 @@
     >
       <div class="container journal">
         <h2 class="journal-title">{{ item.node.title }}</h2>
-        <p class="journal-excerpt">{{ item.node.excerpt }}</p>
+        <p class="journal-summary">{{ item.node.summary }}</p>
       </div>
     </g-link>
       
@@ -32,7 +32,7 @@ query Journal {
         id
         path
         title
-        excerpt
+        summary
       }
     }
   }
@@ -83,7 +83,7 @@ export default {
   font-size: 2rem;
   color: var(--color-contrast);
 }
-.journal-excerpt {
+.journal-summary {
   color: var(--color-contrast-1);
 }
 
