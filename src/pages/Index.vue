@@ -15,8 +15,9 @@ query Posts {
       node {
         id
         path
-        date (format: "YYYY")
         title
+        thumbnail
+        date (format: "D. MMMM YYYY")
       }
     }
   },

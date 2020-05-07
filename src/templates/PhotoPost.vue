@@ -30,6 +30,12 @@
           </div>
         </div>
 
+        <g-image
+          :src="$page.post.thumbnail"
+          :alt="$page.post.title"
+          class="thumbnail"
+        />
+
         <div
           v-html="$page.post.content"
           class="content"
@@ -46,6 +52,7 @@ query PhotoPost ($path: String!) {
   post: photoPost (path: $path) {
     title
     date (format: "YYYY")
+    thumbnail
     content
     project_bg_color
     project_fg_color
