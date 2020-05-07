@@ -4,8 +4,8 @@ hide_body: true
 display_field: title
 fields:
 - type: text
-  label: Name
-  name: title
+  label: Nombre
+  name: name
   config:
     required: true
 - type: textarea
