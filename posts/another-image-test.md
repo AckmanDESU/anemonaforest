@@ -4,8 +4,8 @@ date: 2019-10-20T09:37:26.163+00:00
 description: I am trying some image uploads.
 summary: Lorem ipsum
 headerImage: "/v1588533697/uploads/wallhaven-6k3oox_yqgilf.jpg"
-
 ---
+
 # h1 Heading 8-)
 
 ## h2 Heading
@@ -20,11 +20,11 @@ headerImage: "/v1588533697/uploads/wallhaven-6k3oox_yqgilf.jpg"
 
 ## Horizontal Rules
 
-***
+---
 
-***
+---
 
-***
+---
 
 ## Typographic replacements
 
@@ -34,7 +34,7 @@ Enable typographer option to see result.
 
 test.. test... test..... test?..... test!....
 
-!!!!!! ???? ,,  -- ---
+!!!!!! ???? ,, -- ---
 
 "Smartypants, double quotes" and 'single quotes'
 
@@ -62,17 +62,18 @@ _This is italic text_
 
 Unordered
 
-* Create a list by starting a line with `+`, `-`, or `*`
-* Sub-lists are made by indenting 2 spaces:
-  * Marker character change forces new list start:
-    * Ac tristique libero volutpat at
+- Create a list by starting a line with `+`, `-`, or `*`
+- Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    - Ac tristique libero volutpat at
 
 
     * Facilisis in pretium nisl aliquet
 
 
     * Nulla volutpat aliquam velit
-* Very easy!
+
+- Very easy!
 
 Ordered
 
@@ -104,8 +105,8 @@ Block code "fences"
 
 Syntax highlighting
 
-``` js
-var foo = function (bar) {
+```js
+var foo = function(bar) {
   return bar++;
 };
 
@@ -114,19 +115,19 @@ console.log(foo(5));
 
 ## Tables
 
-| Option | Description |
-| --- | --- |
-| data | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext | extension to be used for dest files. |
+| Option | Description                                                               |
+| ------ | ------------------------------------------------------------------------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default.    |
+| ext    | extension to be used for dest files.                                      |
 
 Right aligned columns
 
-| Option | Description |
-| ---: | ---: |
-| data | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext | extension to be used for dest files. |
+| Option |                                                               Description |
+| -----: | ------------------------------------------------------------------------: |
+|   data | path to data files to supply the data that will be passed into templates. |
+| engine |    engine to be used for processing templates. Handlebars is the default. |
+|    ext |                                      extension to be used for dest files. |
 
 ## Links
 
@@ -162,8 +163,8 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 
 ### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
 
-* 19^th^
-* H\~2\~O
+- 19^th^
+- H\~2\~O
 
 ### [<ins>](https://github.com/markdown-it/markdown-it-ins)
 
@@ -193,15 +194,15 @@ Duplicated footnote reference\[^second\].
 
 Term 1
 
-:   Definition 1
+: Definition 1
 with lazy continuation.
 
 Term 2 with _inline markup_
 
-:   Definition 2
+: Definition 2
 
         { some code, part of Definition 2 }
-    
+
     Third paragraph of definition 2.
 
 _Compact style:_

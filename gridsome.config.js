@@ -11,31 +11,31 @@ module.exports = {
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "data/content/posts/**/*.md",
+        path: "posts/**/*.md",
         typeName: "BlogPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
-        }
-      }
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
+      },
     },
     {
       use: "@gridsome/source-filesystem",
       options: {
-        path: "data/content/photos/**/*.md",
+        path: "photos/**/*.md",
         typeName: "PhotoPost",
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
-        }
-      }
-    }
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+        },
+      },
+    },
   ],
   transformers: {
     remark: {
-      plugins: ["@gridsome/remark-prismjs"]
-    }
-  }
+      plugins: ["@gridsome/remark-prismjs"],
+    },
+  },
 };

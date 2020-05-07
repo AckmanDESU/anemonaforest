@@ -7,21 +7,39 @@
         <p>Leave me a note with any questions you might have, I'll get back to you as soon as possible.</p>
       </div>
 
-      <form class="contact-form" name="contact">
+      <form
+        class="contact-form"
+        name="contact"
+      >
 
         <div class="sender-info">
           <div>
-            <label for="name" class="label">Your name</label>
-            <input type="text" name="name" />
+            <label
+              for="name"
+              class="label"
+            >Your name</label>
+            <input
+              type="text"
+              name="name"
+            />
           </div>
           <div>
-            <label for="email" class="label">Your email</label>
-            <input type="email" name="email" />
+            <label
+              for="email"
+              class="label"
+            >Your email</label>
+            <input
+              type="email"
+              name="email"
+            />
           </div>
         </div>
 
         <div class="message">
-          <label for="message" class="label">Message</label>
+          <label
+            for="message"
+            class="label"
+          >Message</label>
           <textarea name="message"></textarea>
         </div>
 
@@ -58,10 +76,12 @@ export default {}
 .sender-info > div:last-of-type {
   margin: 0;
 }
-input:focus,textarea:focus {
+input:focus,
+textarea:focus {
   border-color: var(--color-contrast-1);
 }
-input,textarea {
+input,
+textarea {
   background: transparent;
   border: 1px solid var(--color-base-1);
   outline: none;

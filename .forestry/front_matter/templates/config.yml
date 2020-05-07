@@ -2,33 +2,33 @@
 label: Configuración
 hide_body: true
 fields:
-- type: text
-  name: site_name
-  label: Nombre del Sitio
-- type: textarea
-  name: site_description
-  label: Descripción del Sitio
-- type: textarea
-  name: hero_title
-  label: Título Principal
-  config:
-    wysiwyg: true
-    schema:
-      format: html
-- type: textarea
-  name: hero_subtitle
-  label: Subtítulo
-  config:
-    wysiwyg: true
-    schema:
-      format: html
-- name: footer
-  label: Pie de Página
-  type: text
-  hidden: false
-  default: ''
-- type: boolean
-  name: dark_mode
-  label: Modo Oscuro
+  - type: text
+    name: site_name
+    label: Nombre del Sitio
+  - type: textarea
+    name: site_description
+    label: Descripción del Sitio
+  - type: textarea
+    name: hero_title
+    label: Título Principal
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+  - type: textarea
+    name: hero_subtitle
+    label: Subtítulo
+    config:
+      wysiwyg: true
+      schema:
+        format: html
+  - name: footer
+    label: Pie de Página
+    type: text
+    hidden: false
+    default: ""
+  - type: boolean
+    name: dark_mode
+    label: Modo Oscuro
 pages:
-- data/config.json
+  - data/config.json

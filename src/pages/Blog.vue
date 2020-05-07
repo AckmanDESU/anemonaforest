@@ -2,30 +2,30 @@
   <Layout>
 
     <div class="container">
-      <div class="journal-hero">
-        <h1 class="journal-header">
-          a wise person once said...
+      <div class="blog-hero">
+        <h1 class="blog-header">
+          Mis pensamientos...
         </h1>
       </div>
     </div>
 
-    <g-link 
+    <g-link
       :to="item.node.path"
-      v-for="item in $page.posts.edges" 
+      v-for="item in $page.posts.edges"
       :key="item.node.id"
-      class="journal-post"
+      class="blog-post"
     >
-      <div class="container journal">
-        <h2 class="journal-title">{{ item.node.title }}</h2>
-        <p class="journal-summary">{{ item.node.summary }}</p>
+      <div class="container post">
+        <h2 class="post-title">{{ item.node.title }}</h2>
+        <p class="post-summary">{{ item.node.summary }}</p>
       </div>
     </g-link>
-      
+
   </Layout>
 </template>
 
 <page-query>
-query Journal {
+query Post {
 	posts: allBlogPost {
     edges {
       node {
@@ -45,56 +45,56 @@ export default {
 </script>
 
 <style scoped>
-.container.journal {
+.container.blog {
   max-width: 720px;
 }
-.journal-hero {
+.blog-hero {
   padding: 4rem 0;
   text-align: center;
   color: var(--color-base-1);
 }
-.journal-header {
+.blog-header {
   font-size: 3rem;
   font-weight: 700;
   padding: 0;
   margin: 0;
 }
-.journal-post {
+.blog-post {
   display: block;
   padding: 2rem 0;
   text-decoration: none;
   transition: background 0.5s ease;
 }
-.journal-post > * {
+.blog-post > * {
   transition: transform 0.5s ease;
 }
-.journal-post:hover {
+.blog-post:hover {
   background-color: var(--color-base-1);
 }
-.journal-post:hover > * {
+.blog-post:hover > * {
   transform: translateX(4rem);
 }
-.journal-post h1,
-.journal-post h2 {
+.blog-post h1,
+.blog-post h2 {
   margin: 0;
   padding: 0;
 }
-.journal-title {
+.post-title {
   font-size: 2rem;
   color: var(--color-contrast);
 }
-.journal-excerpt {
+.post-summary {
   color: var(--color-contrast-1);
 }
 
 @media (min-width: 560px) {
-  .journal-post {
+  .blog-post {
     padding: 3rem 0;
   }
 }
 
 @media (min-width: 860px) {
-  .journal-post {
+  .blog-post {
     padding: 5rem 0;
   }
 }

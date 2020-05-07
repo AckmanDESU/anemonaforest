@@ -1,19 +1,22 @@
 <template>
   <Layout>
-    <div class="project">
+    <div class="photo">
 
       <div class="container">
 
-        <div class="project-header">
-          <h1 class="project-title" v-html="$page.post.title" />
-          <div class="project-info">
+        <div class="photo-header">
+          <h1
+            class="photo-title"
+            v-html="$page.post.title"
+          />
+          <div class="photo-info">
 
             <div class="categories-container">
               <div class="categories">
                 <span class="label">Categories</span>
-                <span 
+                <span
                   class="category"
-                  v-for="(category, index) in $page.post.categories" 
+                  v-for="(category, index) in $page.post.categories"
                   :key="index"
                   v-text="category"
                 />
@@ -22,12 +25,15 @@
 
             <div class="year-container">
               <span class="label">Year</span>
-              <div v-html="$page.post.date"/>
+              <div v-html="$page.post.date" />
             </div>
           </div>
         </div>
 
-        <div v-html="$page.post.content" class="content" />
+        <div
+          v-html="$page.post.content"
+          class="content"
+        />
 
       </div>
 
@@ -36,8 +42,8 @@
 </template>
 
 <page-query>
-query BlogPost ($path: String!) {
-  post: blogPost (path: $path) {
+query PhotoPost ($path: String!) {
+  post: photoPost (path: $path) {
     title
     date (format: "YYYY")
     content
@@ -62,29 +68,29 @@ export default {
 </script>
 
 <style scoped>
-.project-header {
+.photo-header {
   padding: 20vh 0 4rem 0;
 }
-.project-title {
+.photo-title {
   font-size: 4rem;
   margin: 0 0 4rem 0;
   padding: 0;
 }
-.project-info {
+.photo-info {
   display: flex;
   flex-wrap: wrap;
   font-size: 0.8rem;
 }
-.project-info > div {
+.photo-info > div {
   margin-right: 4rem;
 }
-.project-info > div:last-of-type {
+.photo-info > div:last-of-type {
   margin: 0;
 }
 .category:after {
-  content: ', '
+  content: ", ";
 }
 .category:last-of-type:after {
-  content: '';
+  content: "";
 }
 </style>

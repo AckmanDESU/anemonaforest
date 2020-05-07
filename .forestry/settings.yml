@@ -2,30 +2,30 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: "/static/admin"
-webhook_url: 
+webhook_url:
 sections:
-- type: directory
-  path: data/content/posts
-  label: Blog
-  create: documents
-  match: "**/*.md"
-  templates:
-  - post
-- type: directory
-  path: data/content/photos
-  label: Fotos
-  create: documents
-  match: "**/*.md"
-  templates:
-  - photo
-- type: document
-  path: data/content/author.json
-  label: Autor
-- type: document
-  path: data/config.json
-  label: Configuración
-upload_dir: ''
-public_path: ''
+  - type: directory
+    path: data/content/posts
+    label: Blog
+    create: documents
+    match: "**/*.md"
+    templates:
+      - post
+  - type: directory
+    path: data/content/photos
+    label: Fotos
+    create: documents
+    match: "**/*.md"
+    templates:
+      - photo
+  - type: document
+    path: data/content/author.json
+    label: Autor
+  - type: document
+    path: data/config.json
+    label: Configuración
+upload_dir: ""
+public_path: ""
 front_matter_path: "/xxx"
 use_front_matter_path: false
 file_template: ":filename:"
