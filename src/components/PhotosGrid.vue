@@ -10,7 +10,7 @@
         class="photo-link"
       >
         <g-image
-          :src="item.node.thumbnail"
+          :src="item.node.image"
           :alt="item.node.title"
           class="thumbnail"
         />

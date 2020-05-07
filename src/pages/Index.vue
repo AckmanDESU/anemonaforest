@@ -16,7 +16,7 @@ query Posts {
         id
         path
         title
-        thumbnail
+        image
         date (format: "D. MMMM YYYY")
       }
     }

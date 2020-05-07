@@ -31,9 +31,8 @@
         </div>
 
         <g-image
-          :src="$page.post.thumbnail"
+          :src="$page.post.image"
           :alt="$page.post.title"
-          class="thumbnail"
         />
 
         <div
@@ -52,7 +51,7 @@ query PhotoPost ($path: String!) {
   post: photoPost (path: $path) {
     title
     date (format: "YYYY")
-    thumbnail
+    image
     content
     project_bg_color
     project_fg_color

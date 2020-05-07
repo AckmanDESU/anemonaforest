@@ -3,6 +3,7 @@ dependencies:
   '@gridsome/source-filesystem': 0.6.2
   '@gridsome/transformer-remark': 0.5.0_gridsome@0.7.14
   gridsome: 0.7.14
+  gridsome-plugin-image-cdn: 0.1.6
 lockfileVersion: 5.1
 packages:
   /@babel/code-frame/7.8.3:
@@ -4347,6 +4348,10 @@ packages:
       node: '>=6.0'
     resolution:
       integrity: sha512-7hB/+LxrOjq/dd8APlK0r24uL/67w7SkYnfwhNFwg/VDIGWGmduTDYf3WNstLW2fbbmRwrDGCVSJ2isuf2+4Hw==
+  /gridsome-plugin-image-cdn/0.1.6:
+    dev: false
+    resolution:
+      integrity: sha512-bWwJQ5OtmPYgHaCy5owqLd78kepvYpabbvqPdiW0cNAfPH0kmHbmW2e6l2SMwQ/sTidNd4tgp67oze+75RIVlw==
   /gridsome/0.7.14:
     dependencies:
       '@babel/code-frame': 7.8.3
@@ -9701,3 +9706,4 @@ specifiers:
   '@gridsome/source-filesystem': ^0.6.2
   '@gridsome/transformer-remark': ^0.5.0
   gridsome: ^0.7.13
+  gridsome-plugin-image-cdn: ^0.1.6
