@@ -41,5 +41,3 @@ fields:
   config:
     maxSize: 10
   label: Image
-pages:
-- photos/garage.md
