@@ -24,10 +24,10 @@ sections:
 - type: document
   path: data/config.json
   label: Configuración
-upload_dir: uploads
+upload_dir: ''
 public_path: ''
 front_matter_path: "/xxx"
-use_front_matter_path: true
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_output_directory: dist
