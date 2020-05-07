@@ -26,7 +26,7 @@ sections:
   label: Configuración
 upload_dir: ''
 public_path: https://res.cloudinary.com/ackmandesu/image/upload
-front_matter_path: ''
+front_matter_path: https://res.cloudinary.com/ackmandesu/image/upload
 use_front_matter_path: true
 file_template: ":filename:"
 build:
