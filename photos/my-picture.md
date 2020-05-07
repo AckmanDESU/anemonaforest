@@ -1,6 +1,6 @@
 ---
 date: 2020-05-03
-thumbnail: "/v1486081523/Portfolio%20Project/photo.png"
+thumbnail: "/v1486056812/Portfolio%20Project/fxjtb2v.jpg"
 title: My picture
 tags: []
 project_bg_color: "#FF0000"
