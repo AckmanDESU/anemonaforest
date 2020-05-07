@@ -10,7 +10,7 @@
 
 <page-query>
 query Posts {
-	projects: allBlogPost {
+	projects: allPhotoPost {
     edges {
       node {
         id
@@ -22,7 +22,7 @@ query Posts {
       }
     }
   },
-  journals: allPhotoPost (perPage: 4) {
+  journals: allBlogPost (perPage: 4) {
     edges {
       node {
         id
