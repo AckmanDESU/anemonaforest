@@ -1,45 +1,45 @@
+/* PrismJS 1.15.0
+https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
  * Based on dabblet (http://dabblet.com)
  * @author Lea Verou
  */
 
+pre {
+    padding: calc(var(--space) / 2);
+    font-size: 0.85em;
+    background-color: var(--bg-code);
+    margin-bottom: 2em;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+}
+
+code {
+    background-color: var(--bg-code);
+    color: var(--text-color-code);
+    font-size: 0.85em;
+    padding: 0.2em 0.5em;
+}
+
 code[class*='language-'],
 pre[class*='language-'] {
-    color: black;
-    background: none;
-    font-family: Space Mono, SFMono-Regular, Menlo, Monaco, Consolas,
-        Liberation Mono, Courier New, monospace;
-    font-size: 0.9rem;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
+
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
+
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
-}
-
-pre[class*='language-']::-moz-selection,
-pre[class*='language-'] ::-moz-selection,
-code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
-    text-shadow: none;
-    background: var(--bg-code);
-}
-
-pre[class*='language-']::selection,
-pre[class*='language-'] ::selection,
-code[class*='language-']::selection,
-code[class*='language-'] ::selection {
-    text-shadow: none;
-    background: var(--bg-code);
 }
 
 @media print {
@@ -50,23 +50,13 @@ code[class*='language-'] ::selection {
 }
 
 /* Code blocks */
-
 pre[class*='language-'] {
-    padding: 1em;
-    margin: 0.5em 0;
     overflow: auto;
 }
 
-:not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-    background: var(--bg-code);
-}
-
 /* Inline code */
-
 :not(pre) > code[class*='language-'] {
-    padding: 0.1em;
-    border-radius: 0.3em;
+    border-radius: var(--radius);
     white-space: normal;
 }
 
@@ -92,7 +82,7 @@ pre[class*='language-'] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-    color: #905;
+    color: #c71b7b;
 }
 
 .token.selector,
@@ -109,17 +99,18 @@ pre[class*='language-'] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-    color: #a67f59;
+    color: #9a6e3a;
     background: hsla(0, 0%, 100%, 0.5);
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-    color: #07a;
+    color: #20a7e0;
 }
 
-.token.function {
+.token.function,
+.token.class-name {
     color: #dd4a68;
 }
 

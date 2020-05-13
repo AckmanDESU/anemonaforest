@@ -1,5 +1,5 @@
 {
-  "name": "itsnwa.com",
+  "name": "anemona",
   "private": true,
   "scripts": {
     "build": "gridsome build",
@@ -10,7 +10,97 @@
     "@gridsome/remark-prismjs": "0.3.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.5.0",
-    "gridsome": "^0.7.13",
-    "gridsome-plugin-image-cdn": "^0.1.6"
+    "gridsome": "^0.7.14",
+    "gridsome-plugin-image-cdn": "^0.1.6",
+    "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-scss": "^3.17.2",
+    "truncate-html": "^1.0.3"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 4,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "arrowParens": "always",
+    "semi": false
+  },
+  "stylelint": {
+    "plugins": [
+      "stylelint-scss",
+      "stylelint-prettier"
+    ],
+    "extends": [
+      "stylelint-config-recommended-scss",
+      "stylelint-prettier/recommended"
+    ],
+    "ignoreFiles": "*/dist/**/*",
+    "rules": {
+      "no-duplicate-selectors": true,
+      "property-no-vendor-prefix": true,
+      "value-no-vendor-prefix": true,
+      "function-url-quotes": "always",
+      "font-family-name-quotes": "always-where-recommended",
+      "font-family-no-missing-generic-family-keyword": null,
+      "comment-whitespace-inside": "always",
+      "at-rule-no-vendor-prefix": true,
+      "selector-pseudo-element-colon-notation": "single",
+      "selector-pseudo-class-parentheses-space-inside": "never",
+      "selector-no-vendor-prefix": true,
+      "media-feature-range-operator-space-before": "always",
+      "media-feature-range-operator-space-after": "always",
+      "media-feature-parentheses-space-inside": "never",
+      "media-feature-name-no-vendor-prefix": true,
+      "media-feature-colon-space-before": "never",
+      "media-feature-colon-space-after": "always",
+      "rule-empty-line-before": [
+        "always-multi-line",
+        {
+          "except": [
+            "first-nested"
+          ],
+          "ignore": [
+            "after-comment"
+          ]
+        }
+      ],
+      "declaration-block-no-duplicate-properties": [
+        true,
+        {
+          "ignore": [
+            "consecutive-duplicates-with-different-values"
+          ]
+        }
+      ],
+      "prettier/prettier": true,
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "/^lost-/"
+          ]
+        }
+      ],
+      "at-rule-no-unknown": [
+        true,
+        {
+          "ignoreAtRules": [
+            "/.*/"
+          ]
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@gridsome/transformer-json": "^0.2.1"
   }
 }

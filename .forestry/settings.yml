@@ -11,13 +11,6 @@ sections:
   match: "**/*.md"
   templates:
   - post
-- type: directory
-  path: photos
-  label: Fotos
-  create: documents
-  match: "**/*.md"
-  templates:
-  - photo
 - type: document
   path: data/author.json
   label: Autor

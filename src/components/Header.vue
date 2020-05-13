@@ -1,8 +1,5 @@
 <template>
-  <header
-    class="header"
-    :class="{sticky: $route.path === '/' || $route.path.includes('/photos/')}"
-  >
+  <header class="header">
     <div class="container">
       <div class="left">
         <g-link
@@ -19,12 +16,13 @@
       <nav class="nav right">
         <g-link
           class="nav__link"
-          to="/blog"
-        >Blog</g-link>
+          to="/"
+          exact
+        >Home</g-link>
         <g-link
           class="nav__link"
           to="/contact"
-        >Say Hi!</g-link>
+        >Sobre Mi</g-link>
       </nav>
     </div>
   </header>
@@ -47,24 +45,29 @@ export default {
   height: 6rem;
   z-index: 10;
 }
+
 .header.sticky {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
 }
+
 .header > .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100%;
 }
+
 .home-link {
   text-decoration: none;
 }
+
 .logo {
   height: 1.5rem;
 }
+
 .site-name {
   font-size: 0.9rem;
   font-weight: 700;
@@ -72,6 +75,7 @@ export default {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .nav > * {
   font-size: 0.9rem;
   font-weight: 600;
@@ -83,12 +87,15 @@ export default {
   border-color: transparent;
   transition: border 0.15s;
 }
+
 .nav > *:last-of-type {
   margin: 0;
 }
+
 .nav > *:hover {
   border-color: inherit;
 }
+
 .nav > .active {
   border-color: inherit;
 }

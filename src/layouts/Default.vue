@@ -1,8 +1,8 @@
 <template>
   <div
     class="layout"
-    :class="{ 'sticky-header': $route.path === '/' }"
   >
+    <!-- :class="{ 'sticky-header': $route.path === '/' }" -->
     <Header />
     <slot />
     <Footer />
@@ -22,31 +22,9 @@ export default {
 </script>
 
 
-<style>
+<style lang="scss">
 * {
   box-sizing: border-box;
-}
-
-body {
-  --color-base: rgb(255, 255, 255);
-  --color-base-1: rgb(243, 243, 243);
-  --color-contrast: rgb(0, 0, 0);
-  --color-contrast-1: rgb(43, 43, 43);
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 16px;
-  background: var(--color-base);
-  color: var(--color-contrast);
-  transition: background 0.5s ease;
-}
-
-body.dark {
-  --color-base: rgb(0, 0, 0);
-  --color-base-1: rgb(43, 43, 43);
-  --color-contrast: rgb(255, 255, 255);
-  --color-contrast-1: rgb(243, 243, 243);
 }
 
 h1 {
@@ -85,5 +63,9 @@ img {
   display: block;
   font-weight: 700;
   margin-bottom: 0.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
 }
 </style>

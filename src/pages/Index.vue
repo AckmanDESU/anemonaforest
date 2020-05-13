@@ -1,32 +1,29 @@
 <template>
+  <!-- <Layout :show-logo="false"> -->
   <Layout>
-    <div class="container">
+    <!-- Author intro -->
+    <!-- <Author :show-title="true" /> -->
+
+    <!-- List posts -->
+    <main class="main">
       <Hero />
-      <PhotosGrid :photos="$page.photos.edges" />
-    </div>
-    <LatestPosts :posts="$page.posts.edges" />
+      <PostList :posts="$page.posts.edges" />
+    </main>
   </Layout>
 </template>
 
 <page-query>
 query Posts {
-	photos: allPhotoPost {
+  posts: allPost (perPage: 10) {
     edges {
       node {
         id
         path
+        timeToRead
         title
-        image
-        date (format: "D. MMMM YYYY")
-      }
-    }
-  },
-  posts: allBlogPost (perPage: 4) {
-    edges {
-      node {
-        id
-        path
-        title
+        date(format: "D. MMMM YYYY")
+        summary
+        content
       }
     }
   }
@@ -34,15 +31,24 @@ query Posts {
 </page-query>
 
 <script>
+import Author from '@/components/Author.vue'
 import Hero from "@/components/Hero"
-import PhotosGrid from "@/components/PhotosGrid"
-import LatestPosts from "@/components/LatestPosts"
+import PostList from "@/components/PostList"
 
 export default {
   components: {
+    Author,
     Hero,
-    PhotosGrid,
-    LatestPosts
+    PostList
+  },
+  metaInfo: {
+    title: 'Home'
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.main {
+  padding: 1.5vw 15px 0;
+}
+</style>

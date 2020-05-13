@@ -16,9 +16,16 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer {
+  display: flex;
   font-size: 0.8rem;
-  padding: 6rem 0;
+  padding-top: 6rem;
+
+  > div {
+    background: var(--bg-content-color);
+    border-radius: 10px 10px 0 0;
+    line-height: 2;
+  }
 }
 </style>
