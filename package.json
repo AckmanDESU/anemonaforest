@@ -101,6 +101,7 @@
     }
   },
   "devDependencies": {
-    "@gridsome/transformer-json": "^0.2.1"
+    "@gridsome/transformer-json": "^0.2.1",
+    "dotenv": "^8.2.0"
   }
 }

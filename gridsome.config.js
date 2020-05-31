@@ -5,6 +5,10 @@ module.exports = {
     siteName: 'Blog Personal',
     siteUrl: `https://anemona.netlify.app`,
 
+    metadata: {
+        cloudinary_url: 'https://res.cloudinary.com/ackmandesu/image/upload'
+    },
+
     templates: {
         Post: [
             {

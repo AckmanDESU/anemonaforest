@@ -6,7 +6,7 @@
         <g-image
           alt="Cover image"
           v-if="$page.post.headerImage"
-          :src="$page.post.headerImage"
+          :src="$page.metadata.cloudinary_url + '/w_1980,h_450/' + $page.post.headerImage"
         />
       </header>
       <main class="main post-inner-wrap">
@@ -15,6 +15,7 @@
           class="post__title"
           v-html="$page.post.title"
         />
+        <h2></h2>
         <div
           class="post__content"
           v-html="$page.post.content"
@@ -88,6 +89,10 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
       id
       path
   }
+
+metadata {
+    cloudinary_url
+}
 }
 </page-query>
 
