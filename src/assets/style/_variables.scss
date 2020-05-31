@@ -1,6 +1,6 @@
 // Default variables
 html {
-    --base-font-size: 1.1rem;
+    --base-font-size: 1rem;
 }
 
 // Light default theme
@@ -32,13 +32,25 @@ body {
 
     // Override variables for Dark theme
     &[data-theme='dark'] {
+        --body-color: #fff;
+        --bg-color: #f3f3f3;
+        --bg-content-color: #fff;
+        --bg-code: hsl(0, 0%, 20%);
+        --accent-color: #08c;
+        --link-color: #08c;
+        --light-bg-color: #d3d3d3;
+        --text-color-light: #333;
+        --text-color-normal: #222;
+        --text-color-dark: #111;
+        --text-color-code: #ddd;
+        --border-color: #f0f0f0;
     }
 }
 
 // Make  things smaller for mobile
 @media screen and (max-width: 650px) {
     html {
-        --base-font-size: 17px;
+        --base-font-size: 1rem;
     }
 
     body {

@@ -141,6 +141,7 @@ query Post ($id: ID!) {
     height: 200px;
     margin-bottom: 2rem;
     background-color: var(--light-bg-color);
+
     img {
         width: 100%;
         height: 100%;
@@ -157,11 +158,11 @@ query Post ($id: ID!) {
 
 .post-content {
     font-size: 1rem;
-    line-height: 2;
 
     p {
         margin-bottom: 2rem;
     }
+
     a {
         // color: var(--text-color-normal);
         border-bottom: 1px solid transparent;
@@ -273,7 +274,6 @@ query Post ($id: ID!) {
 
 .kg-bookmark-title {
     font-size: 1rem;
-    line-height: 1.4;
     color: var(--text-color-dark);
     transition: all 0.3s;
     font-weight: 700;
@@ -281,7 +281,6 @@ query Post ($id: ID!) {
 
 .kg-bookmark-description {
     font-size: 0.875rem;
-    line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -350,7 +349,6 @@ query Post ($id: ID!) {
 
 .excerpt {
     font-size: 1.125rem;
-    line-height: 1.8;
 }
 
 .tag-list {
@@ -369,6 +367,7 @@ query Post ($id: ID!) {
         text-transform: uppercase;
         font-size: 0.875rem;
         border-bottom: 1px solid transparent;
+
         &:hover {
             border-color: var(--theme-color);
         }
@@ -377,6 +376,7 @@ query Post ($id: ID!) {
 
 .prev-nex-wrap {
     margin-top: 3rem;
+
     .post {
         .featured-image {
             width: 144px;
@@ -384,15 +384,18 @@ query Post ($id: ID!) {
             border-radius: 3px;
             overflow: hidden;
             background-color: var(--light-bg-color);
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
+
         .content-wrap {
             flex-basis: 0;
             flex-grow: 999;
+
             .title {
                 margin-top: 1rem;
             }
@@ -408,6 +411,7 @@ query Post ($id: ID!) {
                 border-bottom: 1px solid transparent;
                 transition: all 0.3s;
             }
+
             &:hover {
                 .nav-text {
                     border-color: var(--theme-color);
@@ -426,9 +430,11 @@ query Post ($id: ID!) {
         a {
             flex-direction: row-reverse;
         }
+
         .featured-image {
             margin-left: 24px;
         }
+
         .content-wrap {
             text-align: right;
         }
@@ -453,14 +459,18 @@ query Post ($id: ID!) {
             height: 300px;
             margin-bottom: 3rem;
         }
+
         .about-author {
             text-align: inherit;
+
             .avatar-wrap {
                 margin-right: 1.5rem;
             }
+
             .author-info {
                 flex-basis: 0;
                 flex-grow: 99;
+
                 .name {
                     margin-top: 0;
                 }
@@ -473,14 +483,17 @@ query Post ($id: ID!) {
         .prev-post {
             margin-bottom: 2rem;
         }
+
         .next-post {
             a {
                 flex-direction: row;
             }
+
             .featured-image {
                 margin-left: 0;
                 margin-right: 24px;
             }
+
             .content-wrap {
                 text-align: left;
             }
@@ -492,11 +505,13 @@ query Post ($id: ID!) {
         .featured-image-wrap {
             height: 400px;
         }
+
         .post-inner-wrap {
             .post-content {
                 .kg-bookmark-container {
                     flex-direction: row;
                 }
+
                 .kg-bookmark-thumbnail {
                     flex-basis: 13em;
                     min-height: 144px;

@@ -8,13 +8,18 @@
     <main class="main">
       <Hero />
       <PostList :posts="$page.posts.edges" />
+      <Pager :info="$page.posts.pageInfo" :showLinks="true" />
     </main>
   </Layout>
 </template>
 
 <page-query>
-query Posts {
-  posts: allPost (perPage: 10) {
+query Posts ($page: Int) {
+  posts: allPost (perPage: 3, page: $page) @paginate {
+    pageInfo {
+      totalPages
+      currentPage
+    }
     edges {
       node {
         id
@@ -34,12 +39,14 @@ query Posts {
 import Author from '@/components/Author.vue'
 import Hero from "@/components/Hero"
 import PostList from "@/components/PostList"
+import Pager from "@/components/Pager"
 
 export default {
   components: {
     Author,
     Hero,
-    PostList
+    PostList,
+    Pager
   },
   metaInfo: {
     title: 'Home'

@@ -1,10 +1,12 @@
 // Import main css
 import '@/assets/style/index.scss'
 
-import DefaultLayout from "~/layouts/Default.vue";
+import DefaultLayout from '~/layouts/Default.vue'
 
-import "@/assets/code-highlight.css";
+import '@/assets/code-highlight.css'
 
-export default function(Vue) {
-  Vue.component("Layout", DefaultLayout);
+export default function (Vue, { head }) {
+    Vue.component('Layout', DefaultLayout)
+
+    head.htmlAttrs = { lang: 'es' }
 }

@@ -71,7 +71,7 @@
           </svg></a>
       </li>
     </ul>
-    <div class="js-notification-copy-link text-center"><span>¡El link ha sido copiado al portapapeles!</span></div>
+    <div class="js-notification-copy-link text-center" style="display: none"><span>¡El link ha sido copiado al portapapeles!</span></div>
   </div>
 </template>
 
@@ -91,7 +91,7 @@ query {
 
 <style lang="scss">
 .share-wrap {
-    margin: 4rem 0 2rem;
+    margin: 3rem 0 1.5rem;
 
     .share-links {
         padding: 0;
@@ -112,7 +112,7 @@ query {
                 svg {
                     width: 18px;
                     height: 18px;
-                    fill: #fff8;
+                    fill: #0008;
                 }
             }
         }

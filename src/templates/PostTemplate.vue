@@ -2,14 +2,14 @@
   <Layout>
     <!-- <Author class="post-author" /> -->
     <div>
-      <div class="featured-image-wrap">
+      <header class="featured-image-wrap">
         <g-image
           alt="Cover image"
           v-if="$page.post.headerImage"
           :src="$page.post.headerImage"
         />
-      </div>
-      <div class="post-inner-wrap">
+      </header>
+      <main class="main post-inner-wrap">
         <PostMeta :post="$page.post" />
         <h1
           class="post__title"
@@ -29,13 +29,12 @@
           :next="$page.next"
           :prev="$page.prev"
         />
+      </main>
+
+      <div class="post-comments">
+        <!-- Add comment widgets here -->
       </div>
     </div>
-
-    <div class="post-comments">
-      <!-- Add comment widgets here -->
-    </div>
-
   </Layout>
 </template>
 
@@ -93,6 +92,8 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
 </page-query>
 
 <style lang="scss">
+@import '../assets/style/mixins';
+
 .post-title {
     padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
     text-align: center;
@@ -122,10 +123,12 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
         }
 
         img {
-            width: calc(100% + var(--space) * 2);
-            margin-left: calc(var(--space) * -1);
-            display: block;
-            max-width: none;
+            @include mq(md) {
+                width: calc(100% + var(--space) * 2);
+                margin-left: calc(var(--space) * -1);
+                display: block;
+                max-width: none;
+            }
         }
     }
 }
@@ -151,7 +154,7 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
 }
 
 .featured-image-wrap:not(:empty) {
-    height: 200px;
+    height: #{'max(200px, 40vh)'};
     margin-bottom: 2rem;
     background-color: var(--light-bg-color);
 
@@ -171,7 +174,6 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
 
 .post-content {
     font-size: 1rem;
-    line-height: 2;
 
     p {
         margin-bottom: 2rem;
@@ -288,7 +290,6 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
 
 .kg-bookmark-title {
     font-size: 1rem;
-    line-height: 1.4;
     color: var(--text-color-dark);
     transition: all 0.3s;
     font-weight: 700;
@@ -296,7 +297,6 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
 
 .kg-bookmark-description {
     font-size: 0.875rem;
-    line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -365,7 +365,6 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
 
 .excerpt {
     font-size: 1.125rem;
-    line-height: 1.8;
 }
 
 .tag-list {
@@ -566,5 +565,9 @@ query Post ($id: ID!, $prevId: ID, $nextId: ID) {
             }
         }
     }
+}
+
+.main {
+    padding: 1.5vw 15px 0;
 }
 </style>

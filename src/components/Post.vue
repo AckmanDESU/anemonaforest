@@ -37,7 +37,7 @@ export default {
 .post {
     $root: &;
 
-    padding: 2rem 0;
+    padding: 1.5rem 0;
     border-bottom: 1px solid var(--border-color);
 
     &:hover {
@@ -61,7 +61,15 @@ export default {
     }
 
     &__summary {
-        line-height: 2;
+        line-height: 1.75;
+        max-height: calc(1.75rem * 15);
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        hyphens: auto;
+        overflow: hidden;
 
         a,
         a:hover {

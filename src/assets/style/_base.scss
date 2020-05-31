@@ -19,18 +19,23 @@ body {
 
     &:after {
         content: '';
-        background-image: url('../../assets/img/bg.jpg');
+        background-image: url('../../assets/img/bg-faded.jpg'),
+            url('../../assets/img/bg-paper.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         opacity: 0.05;
-        filter: invert(1);
         z-index: -1;
+
+        [data-theme='dark'] & {
+            filter: invert(1);
+        }
     }
 }
 

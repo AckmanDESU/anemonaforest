@@ -1,0 +1,93 @@
+$break-sm: 576px;
+$break-md: 768px;
+$break-lg: 992px;
+$break-xl: 1200px;
+
+$media-sm: '(min-width: #{$break-sm})';
+$media-md: '(min-width: #{$break-md})';
+$media-lg: '(min-width: #{$break-lg})';
+$media-xl: '(min-width: #{$break-xl})';
+
+$query-IE: 'all and (-ms-high-contrast: none), (-ms-high-contrast: active)';
+$query-EDGE: '(-ms-ime-align: auto)';
+
+// Media queries
+@mixin mq($size) {
+    @if $size == 'sm' {
+        @media (min-width: $break-sm) {
+            @content;
+        }
+    } @else if $size == 'md' {
+        @media (min-width: $break-md) {
+            @content;
+        }
+    } @else if $size == 'lg' {
+        @media (min-width: $break-lg) {
+            @content;
+        }
+    } @else if $size == 'xl' {
+        @media (min-width: $break-xl) {
+            @content;
+        }
+    } @else if $size == 'ie' {
+        @media #{$query-IE} {
+            @content;
+        }
+    } @else if $size == 'edge' {
+        @supports #{$query-EDGE} {
+            @content;
+        }
+    } @else {
+        @error "Wrong media query size";
+    }
+}
+
+// Center
+@mixin center($position: both) {
+    position: absolute;
+
+    @if $position == 'vertical' {
+        top: 50%;
+        transform: translateY(-50%);
+    } @else if $position == 'horizontal' {
+        left: 50%;
+        transform: translate(-50%);
+    } @else if $position == 'both' {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } @else {
+        @error "Wrong center position";
+    }
+}
+
+// Quick Padding
+@mixin padding($top: null, $right: null, $bottom: null, $left: null) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+}
+
+// Quick margin
+@mixin margin($top: null, $right: null, $bottom: null, $left: null) {
+    margin-top: $top;
+    margin-right: $right;
+    margin-bottom: $bottom;
+    margin-left: $left;
+}
+
+// Testing atm
+@mixin spacing($multiplier) {
+    margin-bottom: 4px * $multiplier;
+}
+
+@mixin cover-parent() {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
