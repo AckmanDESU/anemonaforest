@@ -30,5 +30,7 @@ fields:
   description: "(Opcional) La foto principal del post"
 pages:
 - posts/cloudinary-rocks.md
-- posts/lorem-ipsum-dolor-sit-amet.md
 - posts/post-with-links.md
+- posts/lorem-ipsum-dolor-sit-amet.md
+- posts/say-hello-to-gridsome.md
+- posts/markdown-test-file.md

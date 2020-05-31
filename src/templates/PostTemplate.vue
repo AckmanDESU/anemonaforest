@@ -5,9 +5,9 @@
       <header class="featured-image-wrap">
         <g-image
           alt="Cover image"
-          v-if="$page.post.headerImage"
           :src="$page.metadata.cloudinary_url + '/w_1980,h_450/' + $page.post.headerImage"
         />
+        <h2 v-text="$page.metadata.cloudinary_url + '/w_1980,h_450/' + $page.post.headerImage" />
       </header>
       <main class="main post-inner-wrap">
         <PostMeta :post="$page.post" />

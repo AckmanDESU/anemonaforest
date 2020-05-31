@@ -49,21 +49,40 @@ module.exports = {
                 remark: {
                     externalLinksTarget: '_blank',
                     externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-                    // plugins: [
-                    //     [
-                    //         '@noxify/gridsome-plugin-remark-embed',
-                    //         {
-                    //             enabledProviders: [
-                    //                 'Spotify',
-                    //                 'Twitter',
-                    //                 'Youtube',
-                    //             ],
-                    //         },
-                    //     ],
-                    // ],
+                    plugins: [
+                        [
+                            '@noxify/gridsome-plugin-remark-embed',
+                            {
+                                enabledProviders: [
+                                    'Spotify',
+                                    'Twitter',
+                                    'Youtube',
+                                ],
+                            },
+                        ],
+                    ],
                 },
             },
         },
+        // {
+        //     use: 'gridsome-plugin-image-cdn',
+        //     options: {
+        //         site: {
+        //             baseUrl: 'https://nemona.netlify.app'
+        //         },
+        //         cdn: {
+        //             baseUrl: 'https://res.cloudinary.com/ackmandesu',
+        //             preset: 'cloudinary',
+        //             imagePrefix: '',
+        //         },
+        //         types: [
+        //             {
+        //                 typeName: 'CDN_Media',
+        //                 sourceField: 'sourceUrl'
+        //             }
+        //         ]
+        //     }
+        // },
     ],
     transformers: {
         remark: {
