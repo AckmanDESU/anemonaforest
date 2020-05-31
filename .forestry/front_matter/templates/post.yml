@@ -29,5 +29,6 @@ fields:
   label: Cabecera
   description: "(Opcional) La foto principal del post"
 pages:
+- posts/cloudinary-rocks.md
 - posts/lorem-ipsum-dolor-sit-amet.md
 - posts/post-with-links.md
