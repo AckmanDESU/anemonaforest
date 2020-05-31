@@ -30,3 +30,4 @@ fields:
   description: "(Opcional) La foto principal del post"
 pages:
 - posts/lorem-ipsum-dolor-sit-amet.md
+- posts/post-with-links.md
