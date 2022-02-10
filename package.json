@@ -13,7 +13,7 @@
     "@noxify/gridsome-plugin-remark-embed": "^1.2.1",
     "gridsome": "^0.7.14",
     "gridsome-plugin-image-cdn": "^0.1.6",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "prettier": "^2.0.5",
     "sass-loader": "^8.0.2",
     "stylelint": "^13.3.3",
